@@ -1,0 +1,11 @@
+gosha/
+build/
+скаченное с хоста 02.02.16г/
+node_modules/
+bower_components/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+css/*.css
