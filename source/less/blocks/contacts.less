@@ -1,0 +1,49 @@
+.contacts {
+
+  a {
+
+    &:hover {
+      border-bottom: none;
+      transition-duration: 0s;
+    }
+
+    &:active {
+      color: darken(@c_red, 10%);
+    }
+  }
+
+  p {
+    padding-bottom: 5px;
+  }
+
+  &__title {
+
+  }
+
+  &__link {
+    &--mail {
+      width: 27px;
+      height: 28px;
+    }
+
+    &--phone {
+      font-size: 48px;
+      font-style: normal;
+      font-family: @ff_title;
+    }
+  }
+
+
+  &__mail {
+    margin-bottom: 7px;
+  }
+
+  &__phone {
+    .link_style_kill;
+    margin-top: -5px;
+  }
+
+  &__social {
+
+  }
+}

@@ -1,0 +1,44 @@
+.social-links {
+  .list_style_kill;
+  font-size: 0;
+  margin-left: -20px;
+
+  &__item {
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+
+  &__link {
+    .link_style_kill;
+    .text_hide;
+    display: inline-block;
+    width: 40px;
+    height: 46px;
+
+    &--black {
+      & .svg--black {
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        & .svg--black {
+          fill: @c_red;
+        }
+      }
+    }
+
+    &--red {
+      & .svg--red {
+        transition: all 0.3s ease;
+      }
+
+      &:hover .svg--red {
+        fill: @c_dark;
+      }
+    }
+  }
+}
+
+

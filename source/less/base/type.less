@@ -1,0 +1,117 @@
+
+html {
+  background: @c_dark url(../img/bg-photo.jpg) no-repeat top center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 1280px;
+  font-size: @fz_base;
+  line-height: @lh_base;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  .padding_margin_kill;
+  width: 100%;
+  font-family: @ff_base;
+  color: @c_grey;
+  font-size: @fz_base;
+  line-height: @lh_base;
+}
+
+p {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  font-weight: @fw_normal;
+  max-height: 9001em;
+}
+
+.cl-effect {
+  position: relative;
+}
+
+.cl-effect a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: @c_red;
+  content: '';
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateY(10px);
+}
+
+.cl-effect a:hover::after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+a {
+  text-decoration: none;
+  color: @c_red;
+  .link_style_kill;
+  display: inline;
+
+  &:active {
+    color: darken(@c_red, 10%);
+  }
+}
+
+h1 {
+  color: @c_red;
+  font-size: @fz_title;
+  font-family: @ff_title;
+}
+
+input {
+  flex-basis: 100%;
+  background-color: transparent;
+  color: @c_grey;
+  border: 2px solid @c_red;
+  padding: 10px 20px;
+
+  &:hover {
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  flex-basis: 100%;
+  background-color: transparent;
+  color: @c_grey;
+  border: 2px solid @c_red;
+  padding: 10px 20px;
+
+  &:hover {
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+::-webkit-input-placeholder {color:@c_grey; opacity: 1; transition: opacity 0.3s ease;}
+::-moz-placeholder          {color:@c_grey; opacity: 1; transition: opacity 0.3s ease;}/* Firefox 19+ */
+:-moz-placeholder           {color:@c_grey; opacity: 1; transition: opacity 0.3s ease;}/* Firefox 18- */
+:-ms-input-placeholder      {color:@c_grey; opacity: 1; transition: opacity 0.3s ease;}
+
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

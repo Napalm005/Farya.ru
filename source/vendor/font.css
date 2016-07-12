@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'ShellyAllegroC';
+  src: url('../font/ShellyAllegroC.ttf') format('truetype'),
+       url('../font/ShellyAllegroC.svg#ShellyAllegroC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

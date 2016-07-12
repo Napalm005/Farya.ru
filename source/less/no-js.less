@@ -1,0 +1,57 @@
+.no-js {
+
+  .photo-block {
+    display:none;
+  }
+
+  .page-header {
+    position: inherit;
+
+    &__toggler {
+      display: none;
+    }
+
+    &__top {
+      background: @c_dark;
+      border-bottom: 1px solid #030303;
+      transition: 0s ease all;
+    }
+
+    @media @desktop {
+      position: absolute;
+
+      &__top {
+        background: transparent;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .slider__item {
+    display: block;
+  }
+
+  .review {
+    padding: 30px 0;
+  }
+
+  .bullet-pagination {
+    display: none;
+  }
+
+  .swiper-button-next{
+    display: none;
+  }
+
+  .swiper-button-prev{
+    display: none;
+  }
+
+  .swiper-container {
+    display: none;
+  }
+}

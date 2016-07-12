@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  flex-grow: 0;
+
+  &__input-block {
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  &__text {
+    display: block;
+    color: @c_red;
+    margin-bottom: 3px;
+  }
+
+  &__input-text {
+
+  }
+
+  &__submit {
+    display: block;
+    width: 160px;
+    padding: 10px 20px;
+    background: @c_red;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(@c_red, 10%);
+    }
+
+    &:active {
+      color: fade(@c_white, 30%);
+    }
+  }
+
+  &__textarea-block {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  &__textarea-text {
+    height: 100px;
+  }
+}
